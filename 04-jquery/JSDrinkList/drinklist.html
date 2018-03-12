@@ -20,7 +20,7 @@
   <script type="text/javascript">
 
     // Array holds all of the drinks available
-    var drinkList = [
+    let drinkList = [
       "Coffee: $5",
       "Espresso: $7",
       "Cappuccino: $6",
@@ -33,12 +33,12 @@
     ];
 
     // 1. Create code that "grabs" the div with the matching id (#drink-options);
-    let drinkOptions = document.getElementById('drink-options')
+    let drinkOptions = document.getElementById('drink-options');
 
     // 2. Create a for loop that creates HTML content of all the drinks using JavaScript.
     // HINT: You will need to use each of the following methods: createElement, innerHTML, appendChild
     for (let i = 0; i < drinkList.length; i++) {
-      let newDrink = document.createElement('div')
+      let newDrink = document.createElement('div');
       newDrink.innerHTML = drinkList[i];
       drinkOptions.appendChild(newDrink);
     }
